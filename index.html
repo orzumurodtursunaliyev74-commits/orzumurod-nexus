@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b16">
+  <title>ORZUMUROD NEXUS</title>
+  <link rel="stylesheet" href="style.css?v=3">
+  <script src="script.js?v=3" defer></script>
+</head>
+<body>
+  <canvas id="space"></canvas>
+
+  <header>
+    <a class="logo" href="#home">N <span>ORZUMUROD.NEXUS</span></a>
+    <nav id="nav">
+      <a href="#home" data-u="home">Bosh sahifa</a>
+      <a href="#about" data-u="about">Men haqimda</a>
+      <a href="#projects" data-u="projects">Loyihalar</a>
+      <a href="#lab">Cyber Lab</a>
+      <a href="#tools" data-u="tools">Asboblar</a>
+    </nav>
+    <div class="actions">
+      <select id="lang">
+        <option value="uz">UZ</option>
+        <option value="en">EN</option>
+        <option value="ru">RU</option>
+      </select>
+      <button id="theme">◐</button>
+      <button id="menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="home">
+      <div>
+        <small class="eyebrow">● DIGITAL WORLD / 2026</small>
+        <h1>WELCOME TO MY<br><em>DIGITAL WORLD.</em></h1>
+        <p data-u="lead">Men texnologiya, Linux, web dasturlash va kiberxavfsizlik olamida yangi imkoniyatlar yarataman.</p>
+        <div class="tags">CYBERSECURITY ✳ LINUX ✳ WEB DEVELOPMENT</div>
+        <a class="primary" href="#projects" data-u="explore">Loyihalarni ko‘rish ↗</a>
+        <a class="secondary" href="#contact" data-u="contact">Bog‘lanish</a>
+        <div class="status">● SYSTEM ONLINE / <span id="clock"></span></div>
+      </div>
+      <div class="orb">
+        <div class="ring"></div>
+        <div class="core">N</div>
+        <label>NEXUS CORE <b>● LIVE</b></label>
+        <aside>⌘ LINUX<br><small>POWER USER</small></aside>
+      </div>
+    </section>
+
+    <div class="ticker">CYBERSECURITY ✳ LINUX ✳ NETWORKING ✳ WEB DEVELOPMENT ✳ INNOVATION ✳</div>
+
+    <section class="wrap section" id="about">
+      <small>01 / ABOUT</small>
+      <h2 data-u="about">Men haqimda<span>.</span></h2>
+      <div class="two">
+        <article class="panel">
+          <h3 data-u="aboutTitle">Qiziqishdan — real natijagacha.</h3>
+          <p data-u="aboutText">Linux tizimlari, tarmoqlar, web texnologiyalar va axborot xavfsizligini amaliy mashqlar orqali o‘rganaman.</p>
+          <div class="stats">
+            <b>04+<small>CORE FIELDS</small></b>
+            <b>24/7<small>CURIOSITY</small></b>
+            <b>∞<small>IDEAS</small></b>
+          </div>
+        </article>
+        <article class="panel skills">
+          <h3>TECH STACK</h3>
+          <label>Linux / Ubuntu<i style="--w:85%"></i></label>
+          <label>HTML / CSS / JS<i style="--w:80%"></i></label>
+          <label>Networking<i style="--w:72%"></i></label>
+          <label>Cybersecurity<i style="--w:68%"></i></label>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap section" id="projects">
+      <small>02 / SELECTED WORK</small>
+      <h2 data-u="projects">Loyihalar<span>.</span></h2>
+      <div class="cards">
+        <article class="panel project">
+          <b>◈</b><small>01 / SECURITY</small>
+          <h3>Wazuh Security Lab</h3>
+          <p data-u="wazuh">Server monitoringi va xavfsizlik hodisalarini kuzatish.</p>
+        </article>
+        <article class="panel project">
+          <b>$_</b><small>02 / LINUX</small>
+          <h3>Linux Environment</h3>
+          <p data-u="linux">Ubuntu server, terminal va tarmoq sozlamalari.</p>
+        </article>
+        <article class="panel project">
+          <b>〈/〉</b><small>03 / WEB</small>
+          <h3>Nexus Portfolio</h3>
+          <p data-u="web">Interaktiv interfeys va zamonaviy web texnologiyalari.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap section" id="lab">
+      <small>03 / CYBER SPACE</small>
+      <h2>Cyber Lab<span>.</span></h2>
+      <p data-u="terminalHint">Xavfsiz demo terminal. help buyrug‘ini yozing.</p>
+      <div class="terminal panel">
+        <div class="termhead">● ● ● <span>orzu@nexus: ~</span></div>
+        <div id="termout">ORZUMUROD NEXUS [v3.0]<br>Type help to see commands.</div>
+        <form id="termform">
+          <label>orzu@nexus:~$</label>
+          <input id="termin" autocomplete="off">
+          <button>↵</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="wrap section" id="tools">
+      <small>04 / DIGITAL TOOLKIT</small>
+      <h2 data-u="tools">Raqamli asboblar<span>.</span></h2>
+      <div class="tools">
+
+        <article class="panel">
+          <h3 data-u="translator">Tarjimon</h3>
+          <textarea id="trtext" placeholder="Matn kiriting..."></textarea>
+          <div class="row">
+            <select id="trfrom">
+              <option value="auto">Auto</option>
+              <option value="uz">Uzbek</option>
+              <option value="en">English</option>
+              <option value="ru">Russian</option>
+            </select>
+            <button id="swap">⇄</button>
+            <select id="trto">
+              <option value="en">English</option>
+              <option value="uz">Uzbek</option>
+              <option value="ru">Russian</option>
+            </select>
+          </div>
+          <button class="primary wide" id="translate" data-u="translate">Tarjima qilish</button>
+          <output id="trout">Natija shu yerda chiqadi.</output>
+          <button class="copy" data-copy="trout">Copy</button>
+        </article>
+
+        <article class="panel">
+          <h3 data-u="password">Parol generatori</h3>
+          <label>Length: <b id="plen">18</b></label>
+          <input id="length" type="range" min="8" max="40" value="18">
+          <div class="checks">
+            <label><input id="upper" type="checkbox" checked> A-Z</label>
+            <label><input id="lower" type="checkbox" checked> a-z</label>
+            <label><input id="nums" type="checkbox" checked> 0-9</label>
+            <label><input id="symbols" type="checkbox" checked> !@#</label>
+          </div>
+          <button class="primary wide" id="gen" data-u="generate">Yaratish</button>
+          <output id="pwout"></output>
+          <button class="copy" data-copy="pwout">Copy</button>
+        </article>
+
+        <article class="panel">
+          <h3>SHA-256</h3>
+          <textarea id="hashin" placeholder="Text..."></textarea>
+          <button class="primary wide" id="hash">Generate hash</button>
+          <output id="hashout"></output>
+          <button class="copy" data-copy="hashout">Copy</button>
+        </article>
+
+        <article class="panel">
+          <h3>JSON Formatter</h3>
+          <textarea id="jsonin" placeholder='{"name":"Nexus"}'></textarea>
+          <button class="primary wide" id="json">Format JSON</button>
+          <output id="jsonout"></output>
+          <button class="copy" data-copy="jsonout">Copy</button>
+        </article>
+
+        <article class="panel">
+          <h3>Base64 Encoder / Decoder</h3>
+          <textarea id="basein" placeholder="Text or Base64"></textarea>
+          <div class="row">
+            <button class="primary" id="encode">Encode</button>
+            <button id="decode">Decode</button>
+          </div>
+          <output id="baseout"></output>
+          <button class="copy" data-copy="baseout">Copy</button>
+        </article>
+
+        <article class="panel">
+          <h3 data-u="weather">Ob-havo</h3>
+          <form id="weatherform" class="row">
+            <input id="city" value="Tashkent">
+            <button class="primary">↗</button>
+          </form>
+          <output id="weatherout">Shahar nomini kiriting.</output>
+        </article>
+
+        <article class="panel">
+          <h3 data-u="currency">Valyuta kalkulyatori</h3>
+          <input id="amount" type="number" value="1">
+          <div class="row">
+            <select id="from">
+              <option>USD</option><option>EUR</option><option>UZS</option><option>RUB</option>
+            </select>
+            <select id="to">
+              <option>UZS</option><option>USD</option><option>EUR</option><option>RUB</option>
+            </select>
+          </div>
+          <button class="primary wide" id="convert">Convert</button>
+          <output id="currencyout"></output>
+        </article>
+
+        <article class="panel">
+          <h3 data-u="stopwatch">Sekundomer</h3>
+          <div class="timer" id="timer">00:00.00</div>
+          <div class="row">
+            <button class="primary" id="start">Start</button>
+            <button id="reset">Reset</button>
+          </div>
+        </article>
+
+        <article class="panel">
+          <h3 data-u="calculator">Kalkulyator</h3>
+          <input id="display" class="display" value="0" readonly>
+          <div class="keys">
+            <button data-v="AC">AC</button><button data-v="DEL">DEL</button>
+            <button data-v="/">÷</button><button data-v="*">×</button>
+            <button data-v="7">7</button><button data-v="8">8</button>
+            <button data-v="9">9</button><button data-v="-">−</button>
+            <button data-v="4">4</button><button data-v="5">5</button>
+            <button data-v="6">6</button><button data-v="+">+</button>
+            <button data-v="1">1</button><button data-v="2">2</button>
+            <button data-v="3">3</button><button data-v="=">=</button>
+            <button data-v="0" class="zero">0</button><button data-v=".">.</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="wrap section" id="contact">
+      <div class="panel contact">
+        <div>
+          <small>05 / CONNECT</small>
+          <h2 data-u="connect">Keling, aloqada bo‘laylik<span>.</span></h2>
+          <p data-u="connectText">Hamkorlik, g‘oya yoki texnologiya haqida suhbatlashish uchun bog‘laning.</p>
+        </div>
+        <div>
+          <a href="https://t.me/orzumurod_006" target="_blank">TELEGRAM ↗</a>
+          <a href="https://www.instagram.com/tu7sunaliyev/" target="_blank">INSTAGRAM ↗</a>
+          <a href="https://t.me/alfa_9_1_1" target="_blank">CHANNEL ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    © <span id="year"></span> ORZUMUROD NEXUS
+    <span data-u="rights">Barcha huquqlar himoyalangan.</span>
+    <a href="#home">↑ TOP</a>
+  </footer>
+  <div id="toast"></div>
+</body>
+</html>
